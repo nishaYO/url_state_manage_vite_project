@@ -1,8 +1,11 @@
-# React + Vite
+#URL state management in Vite + React project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React+Vite project. This project is for myself to figure out how to manage states using urls and retain the states even after navigation.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The desired flow of the app is:
+- main page "/"
+- main page has a button to home page
+- home page has a lot of buttons in it with random ids and a back button
+- whenever i click on a button the url gets appended with the button id and the text on the button is chagned from "Select Me" to "Selected".
+- then if i go to back button in home page takes me back to "/"
+- then i go again to the home page the url has the previously selected button ids and the text of those buttons is still "Selected".
